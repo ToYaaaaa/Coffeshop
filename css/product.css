@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+:root{
+    --primary : rgb(187, 127, 36);
+    --bg: #010101;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url("../img/background-product.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -600px;
+}
+.container{
+    position: relative;
+    width: 600px;
+    height: 800px;
+    border: 2px solid black;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255,.8);
+    box-shadow: 2px 2px 10px 4px black;
+}
+.container h1 {
+    text-align: center;
+}
+.container h1::after {
+    /* content: '';
+    border-bottom: 2px solid var(--primary);
+    transform: scaleX(.5); */
+    content: '';
+    border-bottom: 0.2rem solid rgb(187, 127, 36) ;
+    display: block;
+    transform: scaleX(.3);
+}
+.container table{
+    margin: 60px 10%;
+    text-align: center;
+}
+.container th{
+    width: 150px ;
+    height: 30px;
+}
+.container th:nth-child(1){
+    width: 30px ;
+    height: 30px;
+}
+.container td{
+    height: 100px;
+}
+.container .form-cari{
+    position: absolute;
+    top:100px;
+    left: 80px;
+}
+.container .form-cari button{
+    width: 60px;
+    height: 25px;
+    border-radius: 25px;
+}
+.container .form-cari input{
+    border-radius: 25px;
+    padding: 2px;
+}
+.container .kembali, .logout{
+    color: black;
+    position: absolute;
+}
+.container .kembali{
+    top: 35px;
+    left: 100px;
+}
+.container #kembali{
+    width: 35px;
+    height: 35px;
+}
+.container .logout{
+    top: 35px;
+    left: 580px;
+}
+.container #logout{
+    width: 30px;
+    height: 30px;
+}
